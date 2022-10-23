@@ -86,7 +86,7 @@ M.init = function()
 
   vim.api.nvim_create_user_command("GPermaLink", M.generate_permalink, {
     range = true,
-    nargs = "?",
+    nargs = "*",
   })
 end
 

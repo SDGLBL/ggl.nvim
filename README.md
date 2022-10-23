@@ -21,5 +21,5 @@ use {
 ```
 
 ### Usage
-- `GLineLink {line_num}` generate line link 
-- `GPermaLink {line_num}` generate permaline link
+- `GLineLink {line_num|start} {end}` generate line link 
+- `GPermaLink {line_num|start} {end}` generate permaline link
