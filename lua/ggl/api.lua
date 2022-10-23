@@ -27,7 +27,7 @@ M.generate_line_link = function(...)
       local end_line_num = tonumber(fargs[2])
       if type(start_line_num) == "number" and type(end_line_num) == "number" then
         utils.show_and_save_url_2_register(
-          line_url .. "#L" .. start_line_num .. "-" .. end_line_num
+          line_url .. "#L" .. start_line_num .. "-L" .. end_line_num
         )
       else
         vim.notify("Invalid line number", vim.log.levels.ERROR)
@@ -36,7 +36,7 @@ M.generate_line_link = function(...)
   else
     local start_line_num = args["line1"]
     local end_line_num = args["line2"]
-    utils.show_and_save_url_2_register(line_url .. "#L" .. start_line_num .. "-" .. end_line_num)
+    utils.show_and_save_url_2_register(line_url .. "#L" .. start_line_num .. "-L" .. end_line_num)
   end
 end
 
@@ -65,7 +65,7 @@ M.generate_permalink = function(...)
       local end_line_num = tonumber(fargs[2])
       if type(start_line_num) == "number" and type(end_line_num) == "number" then
         utils.show_and_save_url_2_register(
-          permalink .. "#L" .. start_line_num .. "-" .. end_line_num
+          permalink .. "#L" .. start_line_num .. "-L" .. end_line_num
         )
       else
         vim.notify("Invalid line number", vim.log.levels.ERROR)
@@ -74,7 +74,7 @@ M.generate_permalink = function(...)
   else
     local start_line_num = args["line1"]
     local end_line_num = args["line2"]
-    utils.show_and_save_url_2_register(permalink .. "#L" .. start_line_num .. "-" .. end_line_num)
+    utils.show_and_save_url_2_register(permalink .. "#L" .. start_line_num .. "-L" .. end_line_num)
   end
 end
 
